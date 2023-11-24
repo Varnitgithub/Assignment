@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5EFFA5"
+        android:orientation="vertical"
+        tools:context=".activities.MainActivity">
+
+        <TextView
+            android:id="@+id/info_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/fontx"
+            android:gravity="center"
+            android:text="@string/info"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/top_btn_background"
+                android:text="privacy policy"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/top_btn_background"
+                android:backgroundTint="#5B2C6F"
+                android:text="reset game"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/round_btn_background"
+
+                android:padding="4dp"
+                android:text="@string/share"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/moreGames"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/round_btn_background"
+                android:text="More\ngames"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_home_background"
+            android:src="@drawable/baseline_home_24" />
+    </LinearLayout>
+
+</layout>
